@@ -1,0 +1,56 @@
+/* Animations */
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Transitions */
+
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  margin: 200px;
+  transition: background-color 5s ease-in 0.5s;
+}
+
+.square:hover {
+  background-color: blue;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  display: inline;
+}
+
+.menu li {
+  display: inline;
+  padding: 0 10px;
+  cursor: pointer;
+  border-bottom: transparent 2px solid;
+  transition: ease-in-out 0.5s border-bottom;
+}
+
+.menu li:hover {
+  border-bottom: black 2px solid;
+}
+
+/* Keyframes */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-animation {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
